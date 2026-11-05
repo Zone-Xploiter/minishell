@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="preview.png" alt="ZX Mini Shell Preview" width="100%">
+</p>
+
 # ZX Mini Shell
 
 A lightweight, compact, and modern PHP Web File Manager.
+
+---
 
 ## Features
 
@@ -11,9 +17,6 @@ A lightweight, compact, and modern PHP Web File Manager.
   - In-browser file viewer and code editor with monospace typography.
   - Instant rename using SweetAlert2 modal popups.
   - Safe delete confirmation dialogs powered by SweetAlert2.
-- **Custom Floating Dropdown**: Sleek obsidian dark dropdown menu replacing native OS select inputs.
-- **Post-Redirect-Get (PRG) Pattern**: Eliminates accidental form resubmissions and duplicate alerts on browser refresh.
-- **Responsive Dark Obsidian Theme**: Seamlessly adapts to desktop, tablet, and mobile screen sizes.
 
 ---
 
@@ -31,22 +34,13 @@ A lightweight, compact, and modern PHP Web File Manager.
    ```php
    $auth_pass = '$2a$12$QKXm8Ps1Yu9Vy5paliQtweQwH2dfgS6Qid2YDV.z6j3017FyiIetm';
    ```
-   To generate a new Bcrypt hash:
+   To generate a new Bcrypt hash, you can use [Bcrypt Generator](https://bcrypt-generator.com/) or via PHP:
    ```php
    echo password_hash('YourNewPassword', PASSWORD_BCRYPT);
    ```
-3. Open `http://localhost/path/to/zx.php` in your browser.
-
----
-
-## Credits & Authors
-
-- **V1.0 (Original Development)**: [Wongedan](https://github.com/wongedan123)
-- **V2.0 (Redesign & Modernization)**: [ZXMarchia](https://github.com/notbell1) / [Zone-Xploiter](https://github.com/Zone-Xploiter)
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
